@@ -180,7 +180,8 @@ By:
 
 ## License
 
-MIT License
+This project is proprietary and source-available for viewing purposes only.
+Reuse, modification, or redistribution without permission is prohibited.
 
 ---
 
