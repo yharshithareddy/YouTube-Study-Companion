@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Summarizer",
+    "version": "1.0",
+    "description": "Summarize YouTube videos with ChatGPT.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+
+    "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "icon128.png"
+        ],
+        "matches": ["*://*.youtube.com/*"]
+      }
+    ]
+}
+  

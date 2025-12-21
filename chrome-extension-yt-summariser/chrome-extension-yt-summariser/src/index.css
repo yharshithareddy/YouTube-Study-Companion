@@ -1,0 +1,4 @@
+/* Adds reusable component classes (like buttons, cards, etc.). */
+@tailwind components;
+/* Injects utility classes */
+@tailwind utilities;

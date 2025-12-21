@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "lib": ["dom", "es6"],
+      "jsx": "react-jsx",
+      "module": "es6",
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "useUnknownInCatchVariables": false
+    },
+    "include": ["src/**/*"]
+  }
+  
