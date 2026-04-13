@@ -10,15 +10,15 @@ It combines:
 
 Instead of keeping learners inside YouTube's default browsing flow, the product moves them into a dedicated study workspace built for focus and guided content discovery.
 
-## Screenshots
-
-### Extension On YouTube
-
-![Study Companion extension](docs/Extension.png)
+## Results
 
 ### Workspace Home
 
 ![Study Companion workspace](docs/Workspace.png)
+
+### Extension On YouTube
+
+![Study Companion extension](docs/Extension.png)
 
 ### Blocked-Page Redirect
 
@@ -62,13 +62,13 @@ Measured sample behavior:
 
 ## Architecture
 
-```text
+
 study-companion/
 |-- backend/      # Express API, Prisma schema, recommendation pipeline
 |-- frontend/     # React workspace and focus mode UI
 |-- extension/    # Chrome extension for YouTube integration and blocking
 `-- data/         # Discover evaluation data and sample corpora
-```
+
 
 Main flow:
 
@@ -174,10 +174,6 @@ This makes it easier to iterate on recommendation logic without relying only on 
 - YouTube API quota can limit repeated live testing
 - Some policy and ranking heuristics are still hand-tuned
 - The app is set up for local development and is not yet packaged for production deployment
-
-## More Context
-
-- The recommendation pipeline lives primarily in `backend/src/routes/recommendations.js` and the `backend/src/services/recommendations/` directory
 
 ## License
 
