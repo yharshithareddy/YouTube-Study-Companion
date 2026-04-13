@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Icons</title>
+</head>
+<body>
+  <canvas id="canvas16" width="16" height="16"></canvas>
+  <canvas id="canvas48" width="48" height="48"></canvas>
+  <canvas id="canvas128" width="128" height="128"></canvas>
+  <script>
+    function createIcon(canvasId, size) {
+      const canvas = document.getElementById(canvasId);
+      const ctx = canvas.getContext('2d');
+
+      const gradient = ctx.createLinearGradient(0, 0, size, size);
+      gradient.addColorStop(0, '#667eea');
+      gradient.addColorStop(1, '#764ba2');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, size, size);
+
+      const radius = Math.max(1, size * 0.06);
+      const bookWidth = size * 0.26;
+      const bookHeight = size * 0.44;
+      const gap = size * 0.03;
+      const leftX = size / 2 - gap / 2 - bookWidth;
+      const rightX = size / 2 + gap / 2;
+      const topY = size / 2 - bookHeight / 2;
+
+      const drawRoundedRect = (x, y, w, h, r, fill) => {
+        ctx.beginPath();
+        ctx.moveTo(x + r, y);
+        ctx.lineTo(x + w - r, y);
+        ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+        ctx.lineTo(x + w, y + h - r);
+        ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+        ctx.lineTo(x + r, y + h);
+        ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+        ctx.lineTo(x, y + r);
+        ctx.quadraticCurveTo(x, y, x + r, y);
+        ctx.closePath();
+        ctx.fillStyle = fill;
+        ctx.fill();
+      };
+
+      drawRoundedRect(leftX, topY, bookWidth, bookHeight, radius, 'rgba(255,255,255,0.94)');
+      drawRoundedRect(rightX, topY, bookWidth, bookHeight, radius, 'rgba(255,255,255,0.82)');
+
+      ctx.strokeStyle = 'rgba(102, 126, 234, 0.32)';
+      ctx.lineWidth = Math.max(1, size * 0.025);
+      ctx.beginPath();
+      ctx.moveTo(size / 2, topY + size * 0.02);
+      ctx.lineTo(size / 2, topY + bookHeight - size * 0.02);
+      ctx.stroke();
+
+      ctx.strokeStyle = 'rgba(102, 126, 234, 0.16)';
+      ctx.beginPath();
+      ctx.moveTo(leftX + bookWidth * 0.18, topY + bookHeight * 0.22);
+      ctx.lineTo(leftX + bookWidth * 0.82, topY + bookHeight * 0.22);
+      ctx.moveTo(rightX + bookWidth * 0.18, topY + bookHeight * 0.22);
+      ctx.lineTo(rightX + bookWidth * 0.82, topY + bookHeight * 0.22);
+      ctx.stroke();
+
+      canvas.toBlob((blob) => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `icon${size}.png`;
+        a.click();
+      });
+    }
+
+    createIcon('canvas16', 16);
+    createIcon('canvas48', 48);
+    createIcon('canvas128', 128);
+  </script>
+</body>
+</html>
