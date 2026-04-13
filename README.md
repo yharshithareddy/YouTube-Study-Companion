@@ -10,7 +10,7 @@ It combines:
 
 Instead of keeping learners inside YouTube's default browsing flow, the product moves them into a dedicated study workspace built for focus and guided content discovery.
 
-## Results
+## Screenshots
 
 ### Workspace Home
 
