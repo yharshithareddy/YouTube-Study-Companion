@@ -63,6 +63,7 @@ Measured sample behavior:
 ## Architecture
 
 
+```text
 study-companion/
 |-- backend/      # Express API, Prisma schema, recommendation pipeline
 |-- frontend/     # React workspace and focus mode UI
