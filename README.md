@@ -10,7 +10,7 @@ It combines:
 
 Instead of keeping learners inside YouTube's default browsing flow, the product moves them into a dedicated study workspace built for focus and guided content discovery.
 
-## Screenshots
+## Results
 
 ### Workspace Home
 
@@ -174,10 +174,6 @@ This makes it easier to iterate on recommendation logic without relying only on 
 - YouTube API quota can limit repeated live testing
 - Some policy and ranking heuristics are still hand-tuned
 - The app is set up for local development and is not yet packaged for production deployment
-
-## More Context
-
-- The recommendation pipeline lives primarily in `backend/src/routes/recommendations.js` and the `backend/src/services/recommendations/` directory
 
 ## License
 
