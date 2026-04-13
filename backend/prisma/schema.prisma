@@ -1,0 +1,195 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  videoId   String?
+  startedAt DateTime  @default(now())
+  endedAt   DateTime?
+  status    String    @default("active")
+  
+  notes              Note[]
+  pomodoroState      PomodoroState?
+  reminderEvents     ReminderEvent[]
+  
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+enum PomodoroPhase {
+  FOCUS
+  BREAK
+}
+
+enum RecommendationLevel {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum RecommendationLearningPreference {
+  THEORY
+  PRACTICAL
+  FUN
+  PROJECTS
+}
+
+enum RecommendationLearningMode {
+  THEORY
+  PRACTICAL
+  BOTH
+}
+
+enum RecommendationTeachingStyle {
+  FUN
+  SERIOUS
+  BALANCED
+}
+
+enum RecommendationPace {
+  SLOW
+  MEDIUM
+  FAST
+}
+
+model PomodoroState {
+  id        String   @id @default(cuid())
+  sessionId String   @unique
+  focusDurationSec Int
+  breakDurationSec Int
+  currentPhase PomodoroPhase
+  isRunning    Boolean
+  remainingSec Int
+  totalFocusedSec Int
+  totalBreakSec   Int
+  pauseCount      Int
+  lastTickAt        DateTime?
+  resumeTimestamps  Json?
+  reminderScreenEveryMin Int @default(50)
+  reminderWaterEveryMin  Int @default(30)
+
+  session   Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([sessionId])
+}
+
+model Note {
+  id           String   @id @default(cuid())
+  sessionId    String
+  timestampSec Int
+  text         String   @db.Text
+  videoId      String?
+  videoTimestampSec Int?
+  
+  session      Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  createdAt    DateTime @default(now())
+  
+  @@index([sessionId])
+}
+enum ReminderType {
+  SCREEN
+  WATER
+}
+
+model ReminderEvent {
+  id        String       @id @default(cuid())
+  sessionId String
+  type      ReminderType
+  phase     PomodoroPhase
+  
+  session   Session      @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime     @default(now())
+  
+  @@index([sessionId])
+  @@index([sessionId, createdAt])
+}
+
+model RecommendationRequest {
+  id                 String                         @id @default(cuid())
+  rawRequirement     String?                        @db.Text
+  topic              String
+  level              RecommendationLevel
+  goal               String?                        @db.Text
+  language           String
+  learningMode       RecommendationLearningMode
+  projectBased       Boolean
+  teachingStyle      RecommendationTeachingStyle
+  pace               RecommendationPace
+  maxDurationMinutes Int?
+  mustHave           Json?
+  avoid              Json?
+  knownPrerequisites Json?
+  structuredProfile  Json?
+
+  results            RecommendationResult[]
+
+  createdAt          DateTime                       @default(now())
+}
+
+model CachedVideoAnalysis {
+  id                     String                       @id @default(cuid())
+  videoId                String                       @unique
+  title                  String
+  description            String?                      @db.Text
+  channelTitle           String?
+  thumbnailUrl           String?
+  publishedAt            DateTime?
+  durationIso            String?
+  durationSeconds        Int?
+  viewCount              Int?
+  transcriptText         String?                      @db.Text
+  chapters               Json?
+  commentsSample         Json?
+  querySources           Json?
+
+  topic                  String?
+  topicTags              Json?
+  difficultyLevel        RecommendationLevel?
+  language               String?
+  learningMode           RecommendationLearningMode?
+  projectBased           Boolean?
+  teachingStyle          RecommendationTeachingStyle?
+  pace                   RecommendationPace?
+  beginnerFriendliness   Float?
+  confidenceScore        Float?
+  summary                String?                      @db.Text
+  analysisSource         String?                      @default("heuristic")
+  analysisVersion        String?                      @default("v1")
+  profileJson            Json?
+
+  createdAt              DateTime                     @default(now())
+  updatedAt              DateTime                     @updatedAt
+
+  recommendationResults  RecommendationResult[]
+}
+
+model RecommendationResult {
+  id               String               @id @default(cuid())
+  requestId        String
+  videoAnalysisId  String
+  rank             Int
+  matchScore       Float
+  whyMatched       Json
+  warnings         Json?
+  scoreBreakdown   Json?
+
+  request          RecommendationRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  videoAnalysis    CachedVideoAnalysis   @relation(fields: [videoAnalysisId], references: [id], onDelete: Cascade)
+
+  createdAt        DateTime             @default(now())
+
+  @@index([requestId])
+  @@index([videoAnalysisId])
+}
+
