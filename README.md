@@ -12,13 +12,13 @@ Instead of keeping learners inside YouTube's default browsing flow, the product 
 
 ## Screenshots
 
-### Extension On YouTube
-
-![Study Companion extension](docs/Extension.png)
-
 ### Workspace Home
 
 ![Study Companion workspace](docs/Workspace.png)
+
+### Extension On YouTube
+
+![Study Companion extension](docs/Extension.png)
 
 ### Blocked-Page Redirect
 
