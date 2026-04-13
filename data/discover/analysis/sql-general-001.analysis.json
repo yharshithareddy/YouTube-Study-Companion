@@ -1,0 +1,28 @@
+{
+  "videoId": "sql-general-001",
+  "analysisMode": "metadata",
+  "confidence": 0.6,
+  "summary": "General SQL tutorial that covers joins as one topic among broader beginner SQL concepts.",
+  "primaryTopic": "sql database",
+  "conceptsCovered": [
+    "select",
+    "where",
+    "joins",
+    "group by",
+    "order by"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.12,
+    "conceptual": 0.64,
+    "theory_heavy": 0.16,
+    "hands_on": 0.36
+  },
+  "educationalIntent": "medium",
+  "bestForRequestTypes": [
+    "learn_basics"
+  ],
+  "notIdealFor": [
+    "join-only deep focus"
+  ]
+}

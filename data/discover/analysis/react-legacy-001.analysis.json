@@ -1,0 +1,28 @@
+{
+  "videoId": "react-legacy-001",
+  "analysisMode": "transcript",
+  "confidence": 0.79,
+  "summary": "Legacy React class-components lesson focused on older patterns instead of modern hooks.",
+  "primaryTopic": "react js",
+  "conceptsCovered": [
+    "class components",
+    "lifecycle methods",
+    "setState",
+    "legacy react"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.1,
+    "conceptual": 0.62,
+    "theory_heavy": 0.28,
+    "hands_on": 0.25
+  },
+  "educationalIntent": "medium",
+  "bestForRequestTypes": [
+    "learn_basics"
+  ],
+  "notIdealFor": [
+    "outdated hooks guidance",
+    "react hooks"
+  ]
+}

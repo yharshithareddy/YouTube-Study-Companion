@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "id": "label_python_beginner_course",
+      "requestType": "learn_basics",
+      "learnerRequest": {
+        "rawRequirement": "Python beginner course",
+        "level": "BEGINNER",
+        "goal": "Learn the fundamentals clearly",
+        "preferredStyle": "BALANCED",
+        "knownPrerequisites": "",
+        "avoid": ""
+      },
+      "expectedTopic": "python programming",
+      "mustHaveConcepts": [],
+      "labels": [
+        {
+          "videoId": "py-real-001",
+          "label": "should_rank_high",
+          "reason": "Strong beginner-friendly course with transcript-backed foundational coverage."
+        },
+        {
+          "videoId": "bad-py-001",
+          "label": "should_reject",
+          "reason": "Wildlife content is irrelevant to Python programming learning."
+        }
+      ]
+    },
+    {
+      "id": "label_react_hooks_explained",
+      "requestType": "concept_clarity",
+      "learnerRequest": {
+        "rawRequirement": "React hooks explained",
+        "level": "BEGINNER",
+        "goal": "Understand hooks clearly",
+        "preferredStyle": "CONCEPT-FIRST",
+        "knownPrerequisites": "JavaScript basics",
+        "avoid": "project only videos"
+      },
+      "expectedTopic": "react js",
+      "mustHaveConcepts": [
+        "hooks",
+        "useState",
+        "useEffect"
+      ],
+      "labels": [
+        {
+          "videoId": "rh-real-001",
+          "label": "should_rank_high",
+          "reason": "Concept-first explanation of hooks with transcript-backed analysis."
+        },
+        {
+          "videoId": "react-hooks-project-001",
+          "label": "should_rank_medium",
+          "reason": "Relevant hooks usage, but more project-based than explanation-first."
+        }
+      ]
+    },
+    {
+      "id": "label_python_web_scraper",
+      "requestType": "build_project",
+      "learnerRequest": {
+        "rawRequirement": "Build a web scraper in Python",
+        "level": "BEGINNER",
+        "goal": "Build a small practical scraping project",
+        "preferredStyle": "PROJECT-BASED",
+        "knownPrerequisites": "",
+        "avoid": "only theory"
+      },
+      "expectedTopic": "python programming",
+      "mustHaveConcepts": [
+        "web scraping",
+        "requests",
+        "beautiful soup"
+      ],
+      "labels": [
+        {
+          "videoId": "py-scrape-001",
+          "label": "should_rank_high",
+          "reason": "Directly matches the build-project goal and required scraping concepts."
+        },
+        {
+          "videoId": "py-scrape-medium-001",
+          "label": "should_rank_medium",
+          "reason": "Covers Beautiful Soup and scraping-related skills, but is not a complete end-to-end scraper project."
+        },
+        {
+          "videoId": "py-real-001",
+          "label": "should_reject",
+          "reason": "Good Python beginner course, but not a scraper project match."
+        },
+        {
+          "videoId": "py-backend-wrong-001",
+          "label": "should_reject",
+          "reason": "Python project content is not enough here; the project must actually be about web scraping."
+        }
+      ]
+    },
+    {
+      "id": "label_sql_joins_explained",
+      "requestType": "concept_clarity",
+      "learnerRequest": {
+        "rawRequirement": "SQL joins explained",
+        "level": "BEGINNER",
+        "goal": "Understand joins clearly",
+        "preferredStyle": "CONCEPT-FIRST",
+        "knownPrerequisites": "SQL basics",
+        "avoid": ""
+      },
+      "expectedTopic": "sql database",
+      "mustHaveConcepts": [
+        "inner join",
+        "left join",
+        "right join"
+      ],
+      "labels": [
+        {
+          "videoId": "sql-joins-001",
+          "label": "should_rank_high",
+          "reason": "Strong concept-first SQL joins explanation with transcript-backed analysis."
+        },
+        {
+          "videoId": "sql-general-001",
+          "label": "should_rank_medium",
+          "reason": "General SQL tutorial that includes joins, but joins are not the main focus."
+        }
+      ]
+    },
+    {
+      "id": "label_python_concepts",
+      "requestType": "concept_clarity",
+      "learnerRequest": {
+        "rawRequirement": "Python concepts",
+        "level": "BEGINNER",
+        "goal": "Understand the concepts clearly",
+        "preferredStyle": "CONCEPT-FIRST",
+        "knownPrerequisites": "",
+        "avoid": "too much theory without examples"
+      },
+      "expectedTopic": "python programming",
+      "mustHaveConcepts": [],
+      "labels": [
+        {
+          "videoId": "py-concepts-001",
+          "label": "should_rank_high",
+          "reason": "Strong concept-first Python explanation for beginners."
+        },
+        {
+          "videoId": "bad-py-001",
+          "label": "should_reject",
+          "reason": "Wildlife content is irrelevant."
+        },
+        {
+          "videoId": "py-advanced-001",
+          "label": "should_reject",
+          "reason": "Advanced internals are not appropriate for a beginner concept request."
+        }
+      ]
+    },
+    {
+      "id": "label_javascript_promises_explained",
+      "requestType": "concept_clarity",
+      "learnerRequest": {
+        "rawRequirement": "JavaScript promises explained",
+        "level": "BEGINNER",
+        "goal": "Understand promises and async behavior clearly",
+        "preferredStyle": "CONCEPT-FIRST",
+        "knownPrerequisites": "JavaScript basics",
+        "avoid": ""
+      },
+      "expectedTopic": "javascript programming",
+      "mustHaveConcepts": [
+        "promises",
+        "resolve",
+        "reject",
+        "async",
+        "await"
+      ],
+      "labels": [
+        {
+          "videoId": "js-promises-001",
+          "label": "should_rank_high",
+          "reason": "Direct concept-first promises explanation with strong transcript-backed coverage."
+        }
+      ]
+    },
+    {
+      "id": "label_python_broad_exploration",
+      "requestType": "broad_exploration",
+      "learnerRequest": {
+        "rawRequirement": "Python",
+        "level": "BEGINNER",
+        "goal": "Find a good place to start learning Python",
+        "preferredStyle": "BALANCED",
+        "knownPrerequisites": "",
+        "avoid": ""
+      },
+      "expectedTopic": "python programming",
+      "mustHaveConcepts": [],
+      "labels": [
+        {
+          "videoId": "py-real-001",
+          "label": "should_rank_high",
+          "reason": "Strong beginner starting point for broad Python exploration."
+        },
+        {
+          "videoId": "py-concepts-001",
+          "label": "should_rank_medium",
+          "reason": "Useful concept-first follow-up for broad Python exploration."
+        },
+        {
+          "videoId": "bad-py-001",
+          "label": "should_reject",
+          "reason": "Snake content must never appear for technical Python exploration."
+        }
+      ]
+    },
+    {
+      "id": "label_react_broad_exploration",
+      "requestType": "broad_exploration",
+      "learnerRequest": {
+        "rawRequirement": "React",
+        "level": "BEGINNER",
+        "goal": "Find a good starting point for learning React",
+        "preferredStyle": "BALANCED",
+        "knownPrerequisites": "JavaScript basics",
+        "avoid": ""
+      },
+      "expectedTopic": "react js",
+      "mustHaveConcepts": [],
+      "labels": [
+        {
+          "videoId": "rh-real-001",
+          "label": "should_rank_high",
+          "reason": "Strong conceptual starting point for understanding React hooks and modern React thinking."
+        },
+        {
+          "videoId": "react-hooks-project-001",
+          "label": "should_rank_medium",
+          "reason": "Reasonable practical follow-up once a starting React explanation is included."
+        },
+        {
+          "videoId": "react-legacy-001",
+          "label": "should_reject",
+          "reason": "Legacy class-components content should not be surfaced as a modern React starting point."
+        }
+      ]
+    }
+  ]
+}

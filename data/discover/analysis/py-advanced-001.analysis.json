@@ -1,0 +1,28 @@
+{
+  "videoId": "py-advanced-001",
+  "analysisMode": "transcript",
+  "confidence": 0.82,
+  "summary": "Advanced Python internals deep dive focused on CPython runtime details and memory behavior.",
+  "primaryTopic": "python programming",
+  "conceptsCovered": [
+    "cpython",
+    "memory layout",
+    "interpreter internals",
+    "object model",
+    "performance"
+  ],
+  "dominantDifficulty": "advanced",
+  "teachingStyle": {
+    "project_based": 0.08,
+    "conceptual": 0.68,
+    "theory_heavy": 0.78,
+    "hands_on": 0.1
+  },
+  "educationalIntent": "high",
+  "bestForRequestTypes": [
+    "concept_clarity"
+  ],
+  "notIdealFor": [
+    "absolute beginners"
+  ]
+}

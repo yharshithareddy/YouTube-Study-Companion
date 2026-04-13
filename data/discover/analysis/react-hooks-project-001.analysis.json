@@ -1,0 +1,28 @@
+{
+  "videoId": "react-hooks-project-001",
+  "analysisMode": "metadata",
+  "confidence": 0.61,
+  "summary": "React hooks project walkthrough that uses useState and useEffect in a todo app, with partial conceptual explanation.",
+  "primaryTopic": "react js",
+  "conceptsCovered": [
+    "hooks",
+    "useState",
+    "useEffect",
+    "todo app",
+    "component state"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.88,
+    "conceptual": 0.38,
+    "theory_heavy": 0.06,
+    "hands_on": 0.86
+  },
+  "educationalIntent": "medium",
+  "bestForRequestTypes": [
+    "build_project"
+  ],
+  "notIdealFor": [
+    "pure concept clarity"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discover Real Video Record",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "videoId",
+    "url",
+    "title",
+    "description",
+    "channelTitle",
+    "durationSeconds",
+    "language",
+    "tags",
+    "transcript",
+    "analysis"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "source": { "type": "string", "enum": ["youtube"] },
+    "videoId": { "type": "string" },
+    "url": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "channelTitle": { "type": "string" },
+    "durationSeconds": { "type": "integer", "minimum": 1 },
+    "publishedAt": { "type": ["string", "null"] },
+    "language": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "views": { "type": ["integer", "null"] },
+        "likes": { "type": ["integer", "null"] },
+        "commentCount": { "type": ["integer", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "transcript": {
+      "type": "object",
+      "required": ["available", "source", "path", "language", "quality"],
+      "properties": {
+        "available": { "type": "boolean" },
+        "source": { "type": ["string", "null"] },
+        "path": { "type": ["string", "null"] },
+        "language": { "type": ["string", "null"] },
+        "quality": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] }
+      },
+      "additionalProperties": false
+    },
+    "analysis": {
+      "type": "object",
+      "required": ["path", "analysisMode", "confidence"],
+      "properties": {
+        "path": { "type": ["string", "null"] },
+        "analysisMode": { "type": "string", "enum": ["transcript", "hybrid", "metadata"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "notes": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

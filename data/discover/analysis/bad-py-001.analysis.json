@@ -1,0 +1,24 @@
+{
+  "videoId": "bad-py-001",
+  "analysisMode": "metadata",
+  "confidence": 0.52,
+  "summary": "Wildlife entertainment content about giant snakes.",
+  "primaryTopic": "python snake",
+  "conceptsCovered": [
+    "snake",
+    "wildlife",
+    "animal"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.0,
+    "conceptual": 0.05,
+    "theory_heavy": 0.0,
+    "hands_on": 0.0
+  },
+  "educationalIntent": "low",
+  "bestForRequestTypes": [],
+  "notIdealFor": [
+    "technical learning"
+  ]
+}

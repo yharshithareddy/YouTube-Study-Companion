@@ -1,0 +1,30 @@
+{
+  "videoId": "js-promises-001",
+  "analysisMode": "transcript",
+  "confidence": 0.88,
+  "summary": "Concept-first JavaScript promises explanation covering pending, fulfilled, rejected, chaining, and async/await relationships.",
+  "primaryTopic": "javascript programming",
+  "conceptsCovered": [
+    "promises",
+    "resolve",
+    "reject",
+    "then",
+    "catch",
+    "async",
+    "await"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.1,
+    "conceptual": 0.92,
+    "theory_heavy": 0.2,
+    "hands_on": 0.34
+  },
+  "educationalIntent": "high",
+  "bestForRequestTypes": [
+    "concept_clarity"
+  ],
+  "notIdealFor": [
+    "framework-specific async tutorials"
+  ]
+}

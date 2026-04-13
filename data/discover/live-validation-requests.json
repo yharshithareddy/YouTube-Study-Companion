@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "description": "Fixed live validation requests for cautious end-to-end testing against the local recommendations API. Keep this list small and deliberate to avoid unnecessary API spend.",
+  "defaultLimit": 2,
+  "requests": [
+    {
+      "id": "live_python_beginner_course",
+      "body": {
+        "rawRequirement": "Python beginner course",
+        "level": "BEGINNER",
+        "goal": "Learn the fundamentals clearly",
+        "preferredStyle": "BALANCED",
+        "knownPrerequisites": "",
+        "avoid": ""
+      },
+      "expected": {
+        "topic": "python programming",
+        "mustNotContain": ["snake", "wildlife", "movie recap", "giant python"],
+        "shouldContainAtLeastOne": ["python", "beginner", "basics", "course"]
+      }
+    },
+    {
+      "id": "live_react_hooks_explained",
+      "body": {
+        "rawRequirement": "React hooks explained",
+        "level": "BEGINNER",
+        "goal": "Understand hooks clearly",
+        "preferredStyle": "CONCEPT-FIRST",
+        "knownPrerequisites": "JavaScript basics",
+        "avoid": "project only videos"
+      },
+      "expected": {
+        "topic": "react js",
+        "mustNotContain": ["class components", "lifecycle methods", "legacy react"],
+        "shouldContainAtLeastOne": ["hooks", "useState", "useEffect", "react"]
+      }
+    },
+    {
+      "id": "live_python_web_scraper",
+      "body": {
+        "rawRequirement": "Build a web scraper in Python",
+        "level": "BEGINNER",
+        "goal": "Build a small practical scraping project",
+        "preferredStyle": "PROJECT-BASED",
+        "knownPrerequisites": "",
+        "avoid": "only theory"
+      },
+      "expected": {
+        "topic": "python programming",
+        "mustNotContain": ["snake", "wildlife", "movie recap"],
+        "shouldContainAtLeastOne": ["scraping", "requests", "beautiful soup", "project", "python"]
+      }
+    }
+  ]
+}

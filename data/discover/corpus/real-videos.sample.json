@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "description": "Sample structure for a real Discover corpus. These are representative stored records showing how actual video metadata, transcript linkage, and analysis linkage should be organized.",
+  "videos": [
+    {
+      "id": "real_py_beginner_001",
+      "source": "youtube",
+      "videoId": "py-real-001",
+      "url": "https://www.youtube.com/watch?v=py-real-001",
+      "title": "Python Tutorial for Beginners - Full Course",
+      "description": "A beginner-friendly introduction to Python covering variables, loops, functions, lists, dictionaries, and small practice examples.",
+      "channelTitle": "Programming with Mosh",
+      "durationSeconds": 4140,
+      "publishedAt": "2023-08-12T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "beginner", "tutorial", "full course"],
+      "stats": {
+        "views": 1200000,
+        "likes": 43000,
+        "commentCount": 2100
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/py-real-001.json",
+        "language": "English",
+        "quality": "high"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/py-real-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.88
+      },
+      "notes": "Representative of a high-confidence beginner course record."
+    },
+    {
+      "id": "real_react_hooks_001",
+      "source": "youtube",
+      "videoId": "rh-real-001",
+      "url": "https://www.youtube.com/watch?v=rh-real-001",
+      "title": "React Hooks Explained Clearly",
+      "description": "Concept-first explanation of what hooks are, why they exist, and how to reason about useState and useEffect.",
+      "channelTitle": "Web Dev Simplified",
+      "durationSeconds": 1680,
+      "publishedAt": "2024-01-20T00:00:00Z",
+      "language": "English",
+      "tags": ["react", "hooks", "useState", "useEffect"],
+      "stats": {
+        "views": 640000,
+        "likes": 21000,
+        "commentCount": 850
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/rh-real-001.json",
+        "language": "English",
+        "quality": "medium"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/rh-real-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.84
+      },
+      "notes": "Representative of concept-clarity content."
+    },
+    {
+      "id": "real_bad_python_001",
+      "source": "youtube",
+      "videoId": "bad-py-001",
+      "url": "https://www.youtube.com/watch?v=bad-py-001",
+      "title": "Top 10 Biggest Pythons in the World",
+      "description": "Wildlife compilation about giant snakes.",
+      "channelTitle": "Wild Earth",
+      "durationSeconds": 720,
+      "publishedAt": "2022-05-10T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "snake", "wildlife"],
+      "stats": {
+        "views": 300000,
+        "likes": 6000,
+        "commentCount": 300
+      },
+      "transcript": {
+        "available": false,
+        "source": null,
+        "path": null,
+        "language": null,
+        "quality": null
+      },
+      "analysis": {
+        "path": "data/discover/analysis/bad-py-001.analysis.json",
+        "analysisMode": "metadata",
+        "confidence": 0.52
+      },
+      "notes": "Representative of a hard reject for technical Python requests."
+    },
+    {
+      "id": "real_py_scraper_001",
+      "source": "youtube",
+      "videoId": "py-scrape-001",
+      "url": "https://www.youtube.com/watch?v=py-scrape-001",
+      "title": "Python Web Scraping Tutorial with Requests and Beautiful Soup",
+      "description": "Project-based walkthrough showing how to fetch a page with requests and parse it with Beautiful Soup.",
+      "channelTitle": "John Watson Rooney",
+      "durationSeconds": 2580,
+      "publishedAt": "2024-02-14T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "web scraping", "requests", "beautiful soup", "tutorial"],
+      "stats": {
+        "views": 410000,
+        "likes": 15000,
+        "commentCount": 620
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/py-scrape-001.json",
+        "language": "English",
+        "quality": "high"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/py-scrape-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.86
+      },
+      "notes": "Representative of a strong build-project Python candidate."
+    },
+    {
+      "id": "real_sql_joins_001",
+      "source": "youtube",
+      "videoId": "sql-joins-001",
+      "url": "https://www.youtube.com/watch?v=sql-joins-001",
+      "title": "SQL Joins Explained with Simple Examples",
+      "description": "Concept-first explanation of inner join, left join, right join, and full join using small tables.",
+      "channelTitle": "Kudvenkat",
+      "durationSeconds": 1320,
+      "publishedAt": "2023-11-05T00:00:00Z",
+      "language": "English",
+      "tags": ["sql", "joins", "inner join", "left join", "explained"],
+      "stats": {
+        "views": 520000,
+        "likes": 18000,
+        "commentCount": 710
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/sql-joins-001.json",
+        "language": "English",
+        "quality": "high"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/sql-joins-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.87
+      },
+      "notes": "Representative of a strong concept-clarity SQL candidate."
+    },
+    {
+      "id": "real_react_hooks_project_001",
+      "source": "youtube",
+      "videoId": "react-hooks-project-001",
+      "url": "https://www.youtube.com/watch?v=react-hooks-project-001",
+      "title": "Build a Todo App with React Hooks",
+      "description": "Project walkthrough using useState and useEffect inside a small React application.",
+      "channelTitle": "Programming with Example",
+      "durationSeconds": 1980,
+      "publishedAt": "2023-09-18T00:00:00Z",
+      "language": "English",
+      "tags": ["react", "hooks", "todo app", "project"],
+      "stats": {
+        "views": 190000,
+        "likes": 7200,
+        "commentCount": 290
+      },
+      "transcript": {
+        "available": false,
+        "source": null,
+        "path": null,
+        "language": null,
+        "quality": null
+      },
+      "analysis": {
+        "path": "data/discover/analysis/react-hooks-project-001.analysis.json",
+        "analysisMode": "metadata",
+        "confidence": 0.61
+      },
+      "notes": "Representative of a medium-quality hooks candidate that is more project-oriented than explanation-first."
+    },
+    {
+      "id": "real_python_concepts_001",
+      "source": "youtube",
+      "videoId": "py-concepts-001",
+      "url": "https://www.youtube.com/watch?v=py-concepts-001",
+      "title": "Python Concepts Explained for Beginners",
+      "description": "Clear explanation of variables, functions, loops, classes, and data structures with simple examples.",
+      "channelTitle": "Corey Schafer",
+      "durationSeconds": 2220,
+      "publishedAt": "2024-03-02T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "concepts", "explained", "functions", "loops"],
+      "stats": {
+        "views": 380000,
+        "likes": 14600,
+        "commentCount": 540
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/py-concepts-001.json",
+        "language": "English",
+        "quality": "high"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/py-concepts-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.87
+      },
+      "notes": "Representative of concept-first Python explanation content."
+    },
+    {
+      "id": "real_python_advanced_001",
+      "source": "youtube",
+      "videoId": "py-advanced-001",
+      "url": "https://www.youtube.com/watch?v=py-advanced-001",
+      "title": "Advanced Python Internals and CPython Memory Layout",
+      "description": "Deep dive into interpreter internals, memory behavior, and advanced runtime details.",
+      "channelTitle": "Core Systems",
+      "durationSeconds": 2940,
+      "publishedAt": "2023-10-01T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "advanced", "internals", "cpython"],
+      "stats": {
+        "views": 120000,
+        "likes": 5900,
+        "commentCount": 220
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/py-advanced-001.json",
+        "language": "English",
+        "quality": "medium"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/py-advanced-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.82
+      },
+      "notes": "Representative of strong technical content that is wrong for beginner-focused requests."
+    },
+    {
+      "id": "real_react_legacy_001",
+      "source": "youtube",
+      "videoId": "react-legacy-001",
+      "url": "https://www.youtube.com/watch?v=react-legacy-001",
+      "title": "React Class Components Tutorial",
+      "description": "Legacy React lesson focused on class components, lifecycle methods, and older component patterns.",
+      "channelTitle": "Legacy Frontend",
+      "durationSeconds": 1860,
+      "publishedAt": "2020-07-15T00:00:00Z",
+      "language": "English",
+      "tags": ["react", "class components", "lifecycle"],
+      "stats": {
+        "views": 90000,
+        "likes": 2500,
+        "commentCount": 180
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/react-legacy-001.json",
+        "language": "English",
+        "quality": "medium"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/react-legacy-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.79
+      },
+      "notes": "Representative outdated React result for hooks-focused requests."
+    },
+    {
+      "id": "real_sql_general_001",
+      "source": "youtube",
+      "videoId": "sql-general-001",
+      "url": "https://www.youtube.com/watch?v=sql-general-001",
+      "title": "SQL Query Tutorial for Beginners",
+      "description": "General SQL introduction that includes joins as one section among select, where, order by, and grouping.",
+      "channelTitle": "Code Basics",
+      "durationSeconds": 2400,
+      "publishedAt": "2023-06-20T00:00:00Z",
+      "language": "English",
+      "tags": ["sql", "query tutorial", "beginner"],
+      "stats": {
+        "views": 210000,
+        "likes": 8100,
+        "commentCount": 340
+      },
+      "transcript": {
+        "available": false,
+        "source": null,
+        "path": null,
+        "language": null,
+        "quality": null
+      },
+      "analysis": {
+        "path": "data/discover/analysis/sql-general-001.analysis.json",
+        "analysisMode": "metadata",
+        "confidence": 0.6
+      },
+      "notes": "Representative medium candidate for SQL joins requests."
+    },
+    {
+      "id": "real_js_promises_001",
+      "source": "youtube",
+      "videoId": "js-promises-001",
+      "url": "https://www.youtube.com/watch?v=js-promises-001",
+      "title": "JavaScript Promises Explained Clearly",
+      "description": "Concept-first explanation of promises, async flow, resolve, reject, then, catch, and async/await relationships.",
+      "channelTitle": "Web Dev Simplified",
+      "durationSeconds": 1560,
+      "publishedAt": "2024-02-28T00:00:00Z",
+      "language": "English",
+      "tags": ["javascript", "promises", "async", "explained"],
+      "stats": {
+        "views": 470000,
+        "likes": 19800,
+        "commentCount": 760
+      },
+      "transcript": {
+        "available": true,
+        "source": "captions",
+        "path": "data/discover/transcripts/js-promises-001.json",
+        "language": "English",
+        "quality": "high"
+      },
+      "analysis": {
+        "path": "data/discover/analysis/js-promises-001.analysis.json",
+        "analysisMode": "transcript",
+        "confidence": 0.88
+      },
+      "notes": "Representative concept-clarity JavaScript candidate."
+    },
+    {
+      "id": "real_py_scraper_medium_001",
+      "source": "youtube",
+      "videoId": "py-scrape-medium-001",
+      "url": "https://www.youtube.com/watch?v=py-scrape-medium-001",
+      "title": "Beautiful Soup Basics in Python",
+      "description": "Shows how to parse HTML and extract content with Beautiful Soup, but stops short of a full end-to-end scraping project.",
+      "channelTitle": "Programming Knowledge",
+      "durationSeconds": 1620,
+      "publishedAt": "2023-12-10T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "beautiful soup", "html parsing", "tutorial"],
+      "stats": {
+        "views": 145000,
+        "likes": 5300,
+        "commentCount": 210
+      },
+      "transcript": {
+        "available": false,
+        "source": null,
+        "path": null,
+        "language": null,
+        "quality": null
+      },
+      "analysis": {
+        "path": "data/discover/analysis/py-scrape-medium-001.analysis.json",
+        "analysisMode": "metadata",
+        "confidence": 0.63
+      },
+      "notes": "Representative medium project-relevant Python scraping candidate."
+    },
+    {
+      "id": "real_py_backend_wrong_001",
+      "source": "youtube",
+      "videoId": "py-backend-wrong-001",
+      "url": "https://www.youtube.com/watch?v=py-backend-wrong-001",
+      "title": "Build a Python REST API with Flask",
+      "description": "Project tutorial for building a backend API with Flask, unrelated to web scraping.",
+      "channelTitle": "Backend Builders",
+      "durationSeconds": 2460,
+      "publishedAt": "2024-01-08T00:00:00Z",
+      "language": "English",
+      "tags": ["python", "flask", "rest api", "backend", "project"],
+      "stats": {
+        "views": 210000,
+        "likes": 8600,
+        "commentCount": 390
+      },
+      "transcript": {
+        "available": false,
+        "source": null,
+        "path": null,
+        "language": null,
+        "quality": null
+      },
+      "analysis": {
+        "path": "data/discover/analysis/py-backend-wrong-001.analysis.json",
+        "analysisMode": "metadata",
+        "confidence": 0.62
+      },
+      "notes": "Representative wrong-project distractor for Python scraping requests."
+    }
+  ]
+}

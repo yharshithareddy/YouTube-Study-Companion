@@ -1,0 +1,29 @@
+{
+  "videoId": "py-scrape-medium-001",
+  "analysisMode": "metadata",
+  "confidence": 0.63,
+  "summary": "Python Beautiful Soup tutorial focused on parsing HTML and extracting content, useful for scraping foundations but not a full project walkthrough.",
+  "primaryTopic": "python programming",
+  "conceptsCovered": [
+    "beautiful soup",
+    "html parsing",
+    "web scraping",
+    "python scraping",
+    "data extraction"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.48,
+    "conceptual": 0.42,
+    "theory_heavy": 0.1,
+    "hands_on": 0.68
+  },
+  "educationalIntent": "medium",
+  "bestForRequestTypes": [
+    "build_project",
+    "learn_basics"
+  ],
+  "notIdealFor": [
+    "full end to end scraper build"
+  ]
+}

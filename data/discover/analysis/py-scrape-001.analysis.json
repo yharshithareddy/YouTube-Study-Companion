@@ -1,0 +1,29 @@
+{
+  "videoId": "py-scrape-001",
+  "analysisMode": "transcript",
+  "confidence": 0.86,
+  "summary": "Hands-on Python web scraping tutorial using requests and Beautiful Soup in a beginner-friendly project walkthrough.",
+  "primaryTopic": "python programming",
+  "conceptsCovered": [
+    "web scraping",
+    "requests",
+    "beautiful soup",
+    "http requests",
+    "html parsing",
+    "data extraction"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.92,
+    "conceptual": 0.48,
+    "theory_heavy": 0.08,
+    "hands_on": 0.9
+  },
+  "educationalIntent": "high",
+  "bestForRequestTypes": [
+    "build_project"
+  ],
+  "notIdealFor": [
+    "advanced scraping optimization"
+  ]
+}

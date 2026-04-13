@@ -1,0 +1,29 @@
+{
+  "videoId": "sql-joins-001",
+  "analysisMode": "transcript",
+  "confidence": 0.87,
+  "summary": "Concept-first SQL joins lesson using simple examples to explain how common join types behave.",
+  "primaryTopic": "sql database",
+  "conceptsCovered": [
+    "inner join",
+    "left join",
+    "right join",
+    "full join",
+    "table relationships"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.12,
+    "conceptual": 0.91,
+    "theory_heavy": 0.22,
+    "hands_on": 0.34
+  },
+  "educationalIntent": "high",
+  "bestForRequestTypes": [
+    "concept_clarity",
+    "learn_basics"
+  ],
+  "notIdealFor": [
+    "advanced query optimization"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "videoId": "py-backend-wrong-001",
+  "analysisMode": "metadata",
+  "confidence": 0.62,
+  "summary": "Flask backend API project tutorial unrelated to scraping or Beautiful Soup based data extraction.",
+  "primaryTopic": "python programming",
+  "conceptsCovered": [
+    "flask",
+    "rest api",
+    "backend",
+    "routing",
+    "http endpoints"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.88,
+    "conceptual": 0.28,
+    "theory_heavy": 0.08,
+    "hands_on": 0.84
+  },
+  "educationalIntent": "medium",
+  "bestForRequestTypes": [
+    "build_project"
+  ],
+  "notIdealFor": [
+    "web scraping",
+    "beautiful soup"
+  ]
+}

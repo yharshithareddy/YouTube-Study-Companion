@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discover Request Labels",
+  "type": "object",
+  "required": ["version", "requests"],
+  "properties": {
+    "version": { "type": "integer" },
+    "requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "requestType",
+          "learnerRequest",
+          "expectedTopic",
+          "labels"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "requestType": {
+            "type": "string",
+            "enum": ["broad_exploration", "learn_basics", "build_project", "concept_clarity"]
+          },
+          "learnerRequest": {
+            "type": "object",
+            "required": ["rawRequirement"],
+            "properties": {
+              "rawRequirement": { "type": "string" },
+              "level": { "type": ["string", "null"] },
+              "goal": { "type": ["string", "null"] },
+              "preferredStyle": { "type": ["string", "null"] },
+              "knownPrerequisites": { "type": ["string", "null"] },
+              "avoid": { "type": ["string", "null"] }
+            },
+            "additionalProperties": true
+          },
+          "expectedTopic": { "type": "string" },
+          "mustHaveConcepts": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["videoId", "label", "reason"],
+              "properties": {
+                "videoId": { "type": "string" },
+                "label": {
+                  "type": "string",
+                  "enum": ["should_rank_high", "should_rank_medium", "should_reject"]
+                },
+                "reason": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

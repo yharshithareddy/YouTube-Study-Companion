@@ -1,0 +1,32 @@
+{
+  "videoId": "py-real-001",
+  "analysisMode": "transcript",
+  "confidence": 0.88,
+  "summary": "Beginner Python course covering foundational syntax and core programming concepts with examples.",
+  "primaryTopic": "python programming",
+  "conceptsCovered": [
+    "variables",
+    "strings",
+    "numbers",
+    "conditionals",
+    "loops",
+    "functions",
+    "lists",
+    "dictionaries"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.25,
+    "conceptual": 0.78,
+    "theory_heavy": 0.18,
+    "hands_on": 0.62
+  },
+  "educationalIntent": "high",
+  "bestForRequestTypes": [
+    "learn_basics",
+    "broad_exploration"
+  ],
+  "notIdealFor": [
+    "advanced internals"
+  ]
+}

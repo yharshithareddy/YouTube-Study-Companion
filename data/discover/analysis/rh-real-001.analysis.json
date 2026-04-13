@@ -1,0 +1,29 @@
+{
+  "videoId": "rh-real-001",
+  "analysisMode": "transcript",
+  "confidence": 0.84,
+  "summary": "Concept-first React hooks explanation focused on mental models, useState, useEffect, and beginner understanding.",
+  "primaryTopic": "react js",
+  "conceptsCovered": [
+    "hooks",
+    "useState",
+    "useEffect",
+    "state",
+    "side effects",
+    "rendering"
+  ],
+  "dominantDifficulty": "beginner",
+  "teachingStyle": {
+    "project_based": 0.15,
+    "conceptual": 0.9,
+    "theory_heavy": 0.24,
+    "hands_on": 0.4
+  },
+  "educationalIntent": "high",
+  "bestForRequestTypes": [
+    "concept_clarity"
+  ],
+  "notIdealFor": [
+    "project walkthrough only"
+  ]
+}
