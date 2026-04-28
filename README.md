@@ -24,7 +24,7 @@ Instead of keeping learners inside YouTube's default browsing flow, the product 
 
 ![Study Companion blocked page](docs/Blocked.png)
 
-
+Full Video demo : https://www.youtube.com/watch?v=FjsNf_3rnEg
 ## Highlights
 
 - Start study sessions directly from YouTube watch pages
